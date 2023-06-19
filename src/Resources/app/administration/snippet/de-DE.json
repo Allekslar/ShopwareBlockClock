@@ -1,0 +1,11 @@
+{
+    "aleks-wsdev": {
+        "blocks": {
+            "text-image": {
+                "clock-block": {
+                    "label": "Uhrenblock"
+                }
+            }
+        }
+    }
+}

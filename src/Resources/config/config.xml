@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>#Clock# Settings color</title>
+        <title lang="de-DE">#Clock# Einstellungsfarbe</title>
+
+        <input-field type="colorpicker">
+            <name>color</name>
+            <label>Clock text color</label>
+            <label lang="de-DE">Textfarbe</label>
+        </input-field>
+    </card>
+    <card>
+        <title>#Clock# Settings font size</title>
+        <title lang="de-DE">#Clock# Einstellungen für die Schriftgröße</title>
+        <input-field type="int">
+            <name>fontSize</name>
+            <label>Font size date</label>
+            <label lang="de-DE">Schriftgröße Datum</label>
+            <required>true</required>
+            <defaultValue>20</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>fontSizeTime</name>
+            <label>Font size time</label>
+            <label lang="de-DE">Zeit der Schriftgröße</label>
+            <required>true</required>
+            <defaultValue>22</defaultValue>
+        </input-field>
+    </card>
+</config>

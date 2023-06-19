@@ -1,0 +1,24 @@
+{% set appConfig = config('Clock.config') %}
+{% set color = ((appConfig.color) ? appConfig.color : 'red') %}
+{% set fontSize = ((appConfig.fontSize) ? appConfig.fontSize : '20') %}
+{% set fontSizeTime = ((appConfig.fontSizeTime) ? appConfig.fontSizeTime : '22') %}
+
+
+{% block block_devs_block %}
+
+	<template data-example-plugin data-example-plugin-options='{{ examplePluginOptions|json_encode }}'></template>
+
+	<div style=" color: {{ color }};
+									  border-bottom: {{ color }} solid 2px;
+									  font-size: {{ fontSize }}px;
+									  text-shadow: 0px 0px 100px {{ color }};
+									  box-shadow: -2px -1px 7px 2px {{ color }};">
+		<p class="cl-p" data-clock-time="time" style="
+										font-size: {{ fontSizeTime }}px;">
+			Check your watch</p>
+		<p class="cl-p" data-clock-date="date">___</p>
+		<p class="cl-p cl-description">{{ 'aleks-wsdev.blocks.clock-block.name' | trans }}</p>
+		
+	</div>
+
+{% endblock %}

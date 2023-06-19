@@ -1,0 +1,6 @@
+{% block sw_cms_block_devs_block %}
+	<div class="sw-cms-block-clock-block">
+		<slot name="clock"></slot>
+		<img :src="'/clock/static/img/clock.jpg' | asset">
+	</div>
+{% endblock %}
